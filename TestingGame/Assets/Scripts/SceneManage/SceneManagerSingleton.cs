@@ -40,12 +40,12 @@ public class SceneManagerSingleton : MonoBehaviour
 
     public virtual void StartMenu()
     {
-        SceneManager.LoadScene("StartMenu");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public virtual void StartGameSceneMSingleton()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("RunLevel1");
     }
 
     public virtual void QuitGameMSingleton()

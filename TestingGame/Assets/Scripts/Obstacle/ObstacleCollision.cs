@@ -9,7 +9,8 @@ public class ObstacleCollision : MonoBehaviour
     
     public AudioSource crashThud;
 
-    public Animator animator, animatorCam;
+    public Animator animator;
+    public Animator animatorCam;
     public GameObject mainCam;
 
     public GameObject levelControl;
