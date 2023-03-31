@@ -48,6 +48,11 @@ public class SceneManagerSingleton : MonoBehaviour
         SceneManager.LoadScene("RunLevel1");
     }
 
+    public virtual void RetryGameScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     public virtual void QuitGameMSingleton()
     {
         Application.Quit();
